@@ -1,0 +1,21 @@
+<%- include('partials/head'); -%>
+<%- include('partials/onNav'); -%>
+<div class="container mt-3">
+	<p class="display-4 text-muted">Compose</p>
+	<small class="lead text-muted">Use html tags for text decoration</small>
+	<hr class="my-4">
+	<form id=composee method="POST" action="/compose" autocomplete="off">
+		<div class="form-group">
+			<label for="Title" class="lead">Title :</label>
+			<input name="Title" class="form-control" type="text" placeholder="Enter the title here" autofocus>
+			<label for="Body" class="lead">Body :</label>
+			<textarea name="Body" rows="15" class="form-control" placeholder="Enter the body here"></textarea>
+			<button type="submit" class="btn-lg btn-primary mt-3">Submit</button>
+		</div>
+	</form>
+</div>
+<script>
+	document.getElementById("compose").classList.add("active");
+</script>
+<%- include('partials/onFootSrc'); -%>
+<%- include('partials/foot'); -%>

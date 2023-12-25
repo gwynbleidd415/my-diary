@@ -1,0 +1,30 @@
+<%- include('partials/head'); -%>
+<%- include('partials/onNav'); -%>
+
+<div class="container mt-3">
+	<p class="display-4 text-center text-muted">Welcome <em><%=user%></em></p>
+	<!-- <small class="lead">Use html tags for text decoration</small> -->
+	<hr class="my-4">
+	<div class="container-fluid content-row mt-3">
+		<div class="row">
+			<% data.forEach(element => {%>
+			<div class="col-sm-12 col-md-6 col-lg-4">
+				<a style="text-decoration: none;" href='posts/<%=element.id%>'>
+					<div class="card text-white bg-secondary overflow-auto myCard mb-3">
+						<div class="card-header"><%= element.Time %></div>
+						<div class="card-body">
+							<h4 class="card-title mb-3"><%= element.Title %></h4>
+							<p class="card-text"><%- element.Body.replace(/(?:\r\n|\r|\n)/g, '<br />') %></p>
+						</div>
+					</div>
+				</a>
+			</div>
+			<%}); %>
+		</div>
+	</div>
+</div>
+<script>
+	document.getElementById("home").classList.add("active");
+</script>
+<%- include('partials/onFootSrc'); -%>
+<%- include('partials/foot'); -%>

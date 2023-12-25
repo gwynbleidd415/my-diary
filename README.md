@@ -1,2 +1,2 @@
 # my-diary
-A nodejs and ejs project that allows registered users to create a text post which only they would be able to see.
+A nodejs and ejs project that allows registered users to create a text post which only they would be able to see. Users need to login first and then they can use the site as their personal diary. Used ejs and several other npm packages for creating the frontend portion of the tool. Used Node.js runtime environment, Express.js and various other npm packages for creating the backend. Used Postgresql for managing the database.

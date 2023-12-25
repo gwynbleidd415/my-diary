@@ -1,0 +1,32 @@
+.jumbotron.jumbotron-fluid {
+	margin-bottom: 0rem;
+}
+.navbar-brand {
+	color: black;
+	font-size: x-large;
+}
+.navbar-brand:hover {
+	color: #333333;
+}
+.signreg {
+	width: 25rem;
+	margin: 5rem auto 5rem;
+}
+.myform {
+	padding: 1rem;
+	border-radius: 1em;
+	background-color: #b9b9b9;
+}
+.myCard {
+	width: 18rem;
+	height: 21rem;
+	overflow: hidden;
+}
+.myCard:hover {
+	cursor: pointer;
+	overflow: -moz-scrollbars-none;
+	-ms-overflow-style: none;
+}
+.myCard::-webkit-scrollbar {
+	width: 0 !important;
+}

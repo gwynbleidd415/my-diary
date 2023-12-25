@@ -1,0 +1,20 @@
+<%- include('partials/head'); -%>
+<%- include('partials/onNav'); -%>
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<h1 class="display-4"><%=result.Title%></h1>
+		<p class="lead font-italic"><%=result.Time%></p>
+		<hr class="my-4">
+		<p class="text-monospace lead"><%-result.Body.replace(/(?:\r\n|\r|\n)/g, '<br />')%></p>
+		<a style="float: right;" onclick=" return giveAlert();" href='../delete/<%=result.id%>'>
+			<button type="button" class="btn btn-danger">Delete</button></a>
+	</div>
+</div>
+<script>
+	function giveAlert(e) {
+		let t = confirm("Are you sure you want to delete this?");
+		return t;
+	}
+</script>
+<%- include('partials/onFootSrc'); -%>
+<%- include('partials/foot'); -%>

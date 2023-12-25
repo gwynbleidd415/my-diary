@@ -1,0 +1,18 @@
+<%- include('partials/head'); -%>
+<%- include('partials/offNav'); -%>
+<div class="jumbotron jumbotron-fluid">
+	<div class="container">
+		<% if(param==='about') {%>
+		<h1 class="display-4">About This Site</h1>
+		<p class="lead">This website is built using bootstrap, node js and ejs. This site uses a lot of node packages
+			like express,
+			passport, etc. This was created just to grasp the basics of node js and web development</p>
+		<% }else{ %>
+		<h1 class="display-4">Contact</h1>
+		<p class="lead">This website was created by Mayank Chandwasia.</br>Email ID : mayankchandwasia@gmail.com</p>
+		<% } %>
+	</div>
+</div>
+<script>document.getElementById(`<%=param %>`).classList.add('active');</script>
+<%- include('partials/offFootSrc'); -%>
+<%- include('partials/foot'); -%>
